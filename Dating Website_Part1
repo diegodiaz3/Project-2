@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dating Website</title>
+</head>
+<body>
+
+<form>
+
+<h2> The Dating Site
+
+
+</h2>
+
+<fieldset>
+    <legend>Your Face</legend>
+<input type="file" name="filename" accept="image/gif, image/jpeg, image/png"><br>
+    Image Preview: <br>
+
+</fieldset>
+
+<fieldset>
+    <legend>Your General Details</legend>
+
+
+   Name: <input type="text" name="name" required/> <br>
+
+   Gender: Male<input type="radio" value="male" name="group 1" required/>
+
+    Female<input type="radio" value="female" name="group 1" required/>
+
+    Other<input type="radio" value="other" name="group 1" required/><br>
+
+  Age: <input name="age"  type="number" min="18" max="100" required/> <br>
+
+   Date of Birth: <input type="date"> <br>
+
+   Favorite Color: <input type="color"> <br>
+
+      Which Country: <select>
+            <option
+                value="no selection">no selection</option>
+            <option
+                    value="china">China</option>
+            <option
+                    value="japan">Japan</option>
+            <option
+                value="russia">Russia</option>
+            <option
+                value="united kingdom">United Kingdom</option>
+            <option
+                value="united states">United States</option>
+        </select> <br>
+
+</fieldset>
+
+<fieldset>
+    <legend>Your Indicators</legend>
+
+  Height: Short <input type="range" min="0" max="100"> Tall <br>
+   Salary: Poor <input type="range" min="0" max="100"> Rich <br>
+</fieldset>
+
+<fieldset>
+    <legend>Your Contact Information</legend>
+
+   Email: <input type="email" required> <br>
+
+   Mobile: <input type="tel"> <br>
+
+       Address: <textarea></textarea> <br>
+
+    Method to Contact You:<input type="checkbox">Email<input type="checkbox">Whatsapp<input type="checkbox"> In-app chat  <br>
+
+    </fieldset>
+
+
+<input type="submit" value="submit" </input>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
