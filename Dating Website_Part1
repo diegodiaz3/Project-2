@@ -30,7 +30,7 @@
 
     Female<input type="radio" value="female" name="group 1" required/>
 
-    Other<input type="radio" value="other" name="group 1" required/><br>
+    <br>
 
   Age: <input name="age"  type="number" min="18" max="100" required/> <br>
 
