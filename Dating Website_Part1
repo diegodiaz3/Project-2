@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-
-       fieldset {
-           background-color: lightyellow;
-            border: 10px solid yellow;
-           margin-bottom:10px;
-           width:720px;
-       }
-
-
-
-    </style>
+    
     <meta charset="UTF-8">
     <title>Dating Website</title>
 </head>
