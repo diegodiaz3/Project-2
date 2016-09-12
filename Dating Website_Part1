@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+
+       fieldset {
+           background-color: lightyellow;
+            border: 10px solid yellow;
+           margin-bottom:10px;
+           width:720px;
+       }
+
+
+
+    </style>
     <meta charset="UTF-8">
     <title>Dating Website</title>
 </head>
@@ -15,30 +27,36 @@
 
 <fieldset>
     <legend>Your Face</legend>
-<input type="file" name="filename" accept="image/gif, image/jpeg, image/png"><br>
-    Image Preview: <br>
+<input id="img" type=file name="filename" accept="image/gif, image/jpeg, image/png"><br>
+    <label for="img">Image Preview:</label><br>
 
 </fieldset>
 
 <fieldset>
     <legend>Your General Details</legend>
 
+            <label for="name">Name:</label>
+    <input type="text"  name="name"  id="name" required/> <br>
 
-   Name: <input type="text" name="name" required/> <br>
+            <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male" required/>
 
-   Gender: Male<input type="radio" value="male" name="group 1" required/>
-
-    Female<input type="radio" value="female" name="group 1" required/>
+            <label for="female">Female</label>
+    <input type="radio" value="female" name="gender" id="female" required/>
 
     <br>
 
-  Age: <input name="age"  type="number" min="18" max="100" required/> <br>
+            <label for="age">Age:</label>
+    <input name="age" id="age" type="number" min="18" max="100" required/> <br>
 
-   Date of Birth: <input type="date"> <br>
+            <label for="birth">Date of Birth:</label>
+    <input id="birth" type="date"> <br>
 
-   Favorite Color: <input type="color"> <br>
+            <label for="color">Favorite Color:</label>
+    <input id="color" type="color"> <br>
 
-      Which Country: <select>
+    <label for="country">Which Country:</label>
+       <select id="country">
             <option
                 value="no selection">no selection</option>
             <option
@@ -57,26 +75,36 @@
 
 <fieldset>
     <legend>Your Indicators</legend>
-
-  Height: Short <input type="range" min="0" max="100"> Tall <br>
-   Salary: Poor <input type="range" min="0" max="100"> Rich <br>
+            <label for="height">Height: Short</label>
+   <input id="height" type="range" min="0" max="100"> <label for="height">Tall</label> <br>
+            <label for="salary">Salary: Poor</label>
+   <input id="salary" type="range" min="0" max="100"> <label for="salary">Rich</label> <br>
 </fieldset>
 
 <fieldset>
     <legend>Your Contact Information</legend>
+            <label for="email">Email:</label>
+   <input type="email" id="email" required> <br>
 
-   Email: <input type="email" required> <br>
+            <label for="tel">Mobile:</label>
+   <input type="tel" id="tel"> <br>
+            <label for="address">Address:</label>
+        <textarea id="address"></textarea> <br>
 
-   Mobile: <input type="tel"> <br>
-
-       Address: <textarea></textarea> <br>
-
-    Method to Contact You:<input type="checkbox">Email<input type="checkbox">Whatsapp<input type="checkbox"> In-app chat  <br>
+            <label for="method">Method to Contact You:</label>
+    <input type="checkbox" id="method">
+            <label for="email2">Email</label>
+    <input type="checkbox" id="email2">
+            <label for="method">Whatsapp</label>
+    <input type="checkbox" id="chat">
+            <label for="chat">In-app chat</label> <br>
 
     </fieldset>
 
 
-<input type="submit" value="submit" </input>
+<input type="submit" value="submit">
+
+    </input>
 
 </form>
 
@@ -97,3 +125,4 @@
 
 </body>
 </html>
+
